@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Technical Deocumentation</title>
+    <link rel="stylesheet" type="text/css" href="appStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="main-doc">
+        
+        <nav id="navbar">
+            <header id="topic">
+                <img id='main-img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png">
+                <span>Python</span> 
+            </header>
+            <ul>
+                <li><a class="nav-link" href="#Python_Getting_Started">Python Getting started</a></li>
+                <li><a class="nav-link" href="#Python_Syntax">Python Syntax</a></li>
+                <li><a class="nav-link" href="#Python_Comments">Python Comments</a></li>
+                <li><a class="nav-link" href="#Python_Variables">Python Variables</a></li>
+                <li><a class="nav-link" href="#Python_Data_types">Python Data types</a></li>
+                <li><a class="nav-link" href="#Python_If_Else">Python If Else</a></li>
+                <li><a class="nav-link" href="#Python_While_Loops">Python While loops</a></li>
+                <li><a class="nav-link" href="#Python_For_Loops">Python For loops</a></li>
+                <li><a class="nav-link" href="#Python_Functions">Python Functions</a></li>
+                <li><a class="nav-link" href="#Python_Arrays">Python Arrays</a></li>
+                <li><a class="nav-link" href="#Python_Classes_and_Objects">Python Classes and Objects</a></li>
+                <li><a class="nav-link" href="#Python_Iterators">Python Iterators</a></li>
+              
+
+            </ul>
+            
+                  
+        </nav> 
+
+        <div id="right">
+            <section class="main-section" id="Python_Getting_Started">
+                <header>
+                    <h1>Python Getting Started</h1>
+                </header>
+                <div id="python_install">
+                    <h2>Python Install</h2>
+                    <p>Many PCs and Macs will have python already installed.
+                        To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):
+                    </p>
+                    <code>C:\Users\Your Name>python --version</code>
+                    <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+                    <code>python --version</code>
+                </div>
+                <div id="quick">
+                    <h2>Python Quickstart</h2>
+                    <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+                    
+                        The way to run a python file is like this on the command line:</p>
+                        <code>C:\Users\Your Name>python helloworld.py</code>
+                </div>     
+            </section>
+
+            <section class="main-section" id="Python_Syntax">
+                <header>
+                    <h1>Python Syntax</h1>
+                </header>
+                <h2>Execute Python syntax</h2>
+                <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+                <code>>>> print("Hello, World!")
+                    Hello, World!</code>
+
+                <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+                <code>C:\Users\Your Name>python myfile.py</code>    
+            </section>
+
+            <section class="main-section" id="Python_Comments">
+                <header>
+                    <h1>Python Comments</h1>
+                </header>    
+                    <h2>Why to use Comments:</h2>
+                    <ul>
+                        <li>Comments can be used to explain Python code.</li>
+                        <li>Comments can be used to make the code more readable.</li>
+                        <li>Comments can be used to prevent execution when testing code.</li>
+                    </ul>
+
+                    <h2>Creating a Comment</h2>
+                    <p>Comments starts with a #, and Python will ignore them:</p>
+                    <code>print("Hello, World!") #This is a comment</code>
+                
+            </section>
+
+            <section class="main-section" id="Python_Variables">
+                <header>
+                    <h1>Python Variables</h1>
+                </header>
+                <h2>Creating Variables</h2>
+                <p>Variables are containers for storing data values. 
+                    Unlike other programming languages, Python has no command for declaring a variable.
+                    A variable is created the moment you first assign a value to it.</p>
+                <code>x = 5
+                    y = "John"
+                    print(x)
+                    print(y)</code>
+            </section>
+
+
+            <section class="main-section" id="Python_Data_types">
+                <header>
+                    <h1>Python Data types</h1>
+                </header>
+
+                <h2>Built-in Data Types</h2>
+                <p>In programming, data type is an important concept.
+                    Variables can store data of different types, and different types can do different things.
+                    Python has the following data types built-in by default, in these categories:
+                </p>
+                <ul>
+                    <li>Text Type:	str</li>
+                    <li>Numeric Types:	int, float, complex</li>
+                    <li>Sequence Types:	list, tuple, range</li>
+                    <li>Mapping Type:	dict</li>
+                    <li>Set Types:	set, frozenset</li>
+                    <li>Boolean Type: bool</li>
+                    <li>Binary Types: bytes, bytearray, memoryview</li>
+                </ul>
+                
+                <h2>Getting the Data Type</h2>
+                <p>You can get the data type of any object by using the <span>type()</span>  function:</p>
+                <code>x = 5
+                    print(type(x))</code>
+            </section>
+
+            <section class="main-section" id="Python_If_Else">
+                <header>
+                    <h1>Python If Else</h1>
+                </header>
+                <h2>Python Conditions and If statements</h2>
+                <p>Python supports the usual logical conditions from mathematics:</p>
+                <ul>
+                    <li>Equals: a == b</li>
+                    <li>Not Equals: a != b</li>
+                    <li>Less than: a < b</li>
+                    <li>Less than or equal to: a <= b</li>
+                    <li>Greater than: a > b</li>
+                    <li>Greater than or equal to: a >= b</li>
+                </ul>
+                <p>An "if statement" is written by using the if keyword.</p>
+                <code>a = 33
+                    b = 200
+                    if b > a:
+                    &emsp; print("b is greater than a")</code>
+            </section>
+
+            <section class="main-section" id="Python_While_Loops">
+                <header>
+                    <h1>Python While Loops</h1>
+                </header>
+                <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+                <code>i = 1
+                    while i < 6:
+                    &emsp;  print(i)
+                    &emsp;  i += 1</code>
+            </section>
+
+            <section class="main-section" id="Python_For_Loops">
+                <header>
+                    <h1>Python For Loops</h1>
+                </header>
+                <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+                    This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+                    
+                    With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+                <code>fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                    &emsp;  print(x)</code>    
+            </section>
+
+            <section class="main-section" id="Python_Functions">
+                <header>
+                    <h1>Python Functions</h1>
+                </header>
+                <p>A function is a block of code which only runs when it is called.
+
+                    You can pass data, known as parameters, into a function.
+                    
+                    A function can return data as a result.</p>
+                <code>def my_function():
+                    &emsp;  print("Hello from a function")</code>    
+            </section>
+
+            <section class="main-section" id="Python_Arrays">
+                <header>
+                    <h1>Python Arrays</h1>
+                </header>
+                <p>Python does not have built-in support for Arrays, but Python Lists can be used instead.
+                    This page shows you how to use LISTS as ARRAYS, however, to work with arrays in Python you will have to import a library, like the NumPy library.
+                </p>
+                <code>cars = ["Ford", "Volvo", "BMW"]</code>
+            </section>
+
+            <section class="main-section" id="Python_Classes_and_Objects">
+                <header>
+                    <h1>Python Classes and Objects</h1>
+                </header>
+                <p>Python is an object oriented programming language.
+
+                    Almost everything in Python is an object, with its properties and methods.
+                    
+                    A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+                <h2>Create a Class</h2><p>To create a class, use the keyword class:</p>    
+                <code>class MyClass:
+                    &emsp;  x = 5</code>
+
+                <h2>Create Object</h2><p>Now we can use the class named MyClass to create objects:</p>
+                <code>p1 = MyClass()
+                &emsp;  print(p1.x)</code>    
+            </section>
+
+            <section class="main-section" id="Python_Iterators">
+                <header>
+                    <h1>Python Iterators</h1>
+                </header>
+                <p>An iterator is an object that contains a countable number of values.
+
+                    An iterator is an object that can be iterated upon, meaning that you can traverse through all the values.
+                    
+                    Technically, in Python, an iterator is an object which implements the iterator protocol, which consist of the methods __iter__() and __next__().</p>
+                <code>mytuple = ("apple", "banana", "cherry")
+                    myit = iter(mytuple)
+                    
+                    print(next(myit))
+                    print(next(myit))
+                    print(next(myit))</code>    
+            </section>
+
+        </div>
+    </main>
+    
+
+    
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

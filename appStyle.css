@@ -1,0 +1,158 @@
+/* Main screen division and position  */
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(0,0,0);
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+#navbar{
+    float: left; /* show both div side by side*/
+    width: 300px;
+    height: 89%;
+    overflow: auto; /* Scrollbar*/
+    margin-top: 90px;
+    position: fixed;  /*Make both div scrolling independent*/
+    text-align: center;
+}
+
+#right{
+    border-left: 2px solid gray;
+    margin-left:300px; /* shift content section towards right*/
+    /* height: 100%; */
+    padding: 2% 40px;
+    overflow: auto;  /* add scrollbar in this part*/
+    color: white;
+}
+
+main{
+    height: 100%;
+}
+
+#topic{
+    overflow: hidden;  /* hide scrollbar in this part*/
+    width: 300px;
+    position: fixed;
+    top: 20px;
+    left: 24px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    
+}
+
+#main-img{
+    width: 50px;
+    position: fixed;
+    top:13px;
+    left: 65px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* Navbar links------------------------------------------------------ */
+#navbar ul{
+    width:100%;
+    text-align: center;
+    padding: 0;
+    margin-top:0;
+    
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    transition: all 0.2s;
+    display: block;
+    padding: 20px 2px;
+} 
+
+#navbar li a:hover{
+    transform:scale(1.2);
+    color: white;
+}
+
+#navbar li{
+    border-top: 1.5px solid rgb(116, 115, 115);
+    /* padding: 20px 2px; */
+    /* padding:0; */
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Content Section------------------------------------------------------ */
+    code{
+        display: block;
+        background: rgba(128, 128, 128, 0.363);
+        font-size: 1.2rem;
+        padding: 15px 10px;
+        margin-bottom: 30px;
+    }
+    #right p,#right ul{
+        letter-spacing: 0.7px;
+        color: rgb(192, 192, 192);
+        white-space: pre-line;
+    }
+
+    #right p span{
+        color: rgb(0, 102, 255);
+    }
+
+    code{
+        white-space: pre-line;
+        color: rgba(255, 255, 0, 0.74);
+    }
+    header h1{
+        font-size: 2rem;
+        
+    }
+
+    section{
+        margin-bottom: 50px;
+        background: rgba(128, 128, 128, 0.103);
+        padding: 5px 9px;
+    }
+
+    section div{
+        margin:20px auto;
+    }
+/* --------------------------------------------------------------------- */
+
+@media(max-width: 800px){
+    #navbar{
+        float:none;
+        position:static;
+        height: 400px;
+        width: 100%;
+    }
+
+    #right{
+        width: 100%;
+        margin: auto;
+        padding: 20px 20px;
+        border: none;
+    }
+    #topic{
+        position: absolute;
+        margin:auto;
+        left:79px;
+        top:10px;
+    }
+
+    #main-img{
+        position: static;
+        margin-top: 10px;
+        margin-left:70px;
+        display: block;
+        float: left;
+    
+    }
+    #topic span{
+        display: block;
+        margin-top: 15px;
+        padding-right: 57px;
+    }
+}
